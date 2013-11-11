@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Questions and answers</title>
+  <!-- Load local jQuery. -->
+  <script src="../bower_components/jquery/jquery.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="pluginQuestions.js"></script>
+  <script src="pluginAnswers.js"></script>
+  <script src="jquery_boilerplate.js"></script>
+  
+  <script src="../src/eventBus.js"></script>
+  <script src="app.js"></script>
+  <script src="main.js"></script>
+  <!-- Removing access to jQuery and $. But it'll still be available as _$, if
+       you REALLY want to mess around with jQuery in the console. REMEMBER WE
+       ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
+  <script>
+  	window._$ = jQuery.noConflict(true);
+</script>	
+  	
+</head>
+<body>
+	<div id="questions">
+	</div>  
+  
+  <div id="element">
+  	<button onclick="aaa();">Test aaa</button>
+  	<button onclick="aaa1();">Test processAnswer</button>
+  
+  
+  </div>
+  <script>
+   function aaa() {
+   _$("#questions").defaultPluginName1();
+   };
+   
+   function aaa1() {
+	   _$("#questions").defaultPluginName1('yourOtherFunction');
+	};
+
+  </script>
+  
+</body>
+</html>

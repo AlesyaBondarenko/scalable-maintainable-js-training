@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="1/bower_components/jquery"/>
+	<classpathentry excluding="test/|addons/phantomjs/|qunit/" kind="src" path="1/bower_components/qunit"/>
+	<classpathentry kind="src" path="1/bower_components/qunit/addons/phantomjs"/>
+	<classpathentry kind="src" path="1/bower_components/qunit/qunit"/>
+	<classpathentry kind="src" path="1/bower_components/qunit/test"/>
+	<classpathentry kind="src" path="1/src"/>
+	<classpathentry kind="src" path="1/test"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
